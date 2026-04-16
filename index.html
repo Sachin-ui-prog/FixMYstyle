@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixmystle 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HOme page -->
+    <nav>
+        <span>FixMYstle</span>
+        <div>
+            <span>
+                <a href="#home">HOME</a>
+                <a href="#beauty">BEAUTY</a>
+                <a href="#sewing">SEWING</a>
+                <a href="#makeup">MAKEUP</a>
+                <a href="#nails">NAILS</a>
+                <a href="#about us">ABOUT US</a>
+                <a href="#contact">CONTACT</a>
+            </span>
+        </div>
+        <span class="svg"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.327 2H1.75v2h1.389l3.339 11.687A2.5 2.5 0 008.88 17.5h8.988a2.5 2.5 0 002.403-1.813l2.475-8.662a1 1 0 00-.961-1.275H5.719l-.71-2.48A1.75 1.75 0 003.328 2zm5.074 13.137L6.29 7.75h14.17l-2.11 7.387a.5.5 0 01-.482.363H8.882a.5.5 0 01-.48-.363z"
+                    fill="#0F0F0F"></path>
+                <path d="M8.5 21.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18.25 21.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    fill="#0F0F0F"></path>
+            </svg></span>
+        <!-- <span><img src="" alt=""></span> -->
+    </nav>
+    <div id="home" class="main">
+        <div>
+            WHAT DO YOU WANT TO FIX TODAY
+        </div>
+        <div>
+            <input type="text" id="searchInput" placeholder="Search..."
+onkeydown="if(event.key==='Enter') searchService()">
+        </div>
+        <div class="banner">
+            <div class="track">
+                <span class="banner-text">✂️ INSTANT SEWING - 2 HOURS DELIVERY ✂️ INSTANT SEWING - 2 HOURS DELIVERY
+                    ✂️ Comming soon...</span>
+                <span class="banner-text">✂️ INSTANT SEWING - 2 HOURS DELIVERY ✂️ INSTANT SEWING - 2 HOURS DELIVERY
+                    ✂️ Comming soon...</span>
+            </div>
+        </div>
+        <div class="badge">
+            <div>
+                <span>
+                    <img width="150" height="auto" src="image/Adobe Express 2026-04-14 23.11.51.png" alt="">
+                </span>
+                <span>
+                    <h4>POLICE BACKGROUND CHECKED</h4>
+                </span>
+                <span>
+                    100% of our staff have clean records
+                </span>
+
+
+            </div>
+            <div>
+                <img width="150" height="auto" src="image/Adobe Express 2026-04-14 23.14.37.png" alt="">
+                <div>
+                    <h4>
+                        VERIFIED FEMALE TEAM
+
+                    </h4>
+                </div>
+                <div>Your safety is our top priority.</div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div>
+            <div class="box1">
+                <img width="100%" height="140px" src="image/img2.jpeg" alt="">
+            </div>
+            <p>Saree Draping</p>
+            <button onclick="sendToWhatsApp('Saree Draping')">Book Now</button>
+        </div>
+        <div class="box">
+            <div class="box2">
+                <img width="100%" height="140px" src="image/img5.jpeg" alt="">
+            </div>
+            <p>
+                Mehendi
+            </p>
+            <button onclick="sendToWhatsApp('Mehendi')">Book Now</button>
+        </div>
+        <div>
+            <div class="box3">
+                <img width="100%" height="140px" src="image/WhatsApp Image 2026-04-12 at 3.03.16 PM.jpeg" alt="">
+            </div>
+            <p>Nail Extension</p>
+            <button onclick="sendToWhatsApp('Nail Extension')">Book Now</button>
+        </div>
+        <div>
+            <div class="box4">
+                <img width="100%" height="140px" src="image/WhatsApp Image 2026-04-12 at 3.03.17 PM (1).jpeg" alt="">
+            </div>
+            <p>Instant Sewing</p>
+            <button onclick="sendToWhatsApp('Instant Sewing')">Book Now</button>
+        </div>
+        <div>
+            <div class="box5">
+                <img width="100%" height="140px" src="image/img4.jpeg" alt="">
+            </div>
+            <p> Hair Styling </p>
+            <button onclick="sendToWhatsApp('Hair Styling')">Book Now</button>
+        </div>
+        <div>
+            <div class="box6">
+                <img width="100%" height="140px" src="image/img1.jpeg" alt="">
+            </div>
+            <p>Makeup</p>
+            <button onclick="joinWaitlist('Makeup')">Coming Soon...</button>
+        </div>
+        <div class="badge2">
+
+        </div>
+    </div>
+    <!-- beauty page -->
+    <div id="beauty" class="beauty">
+        UNVEIL YOUR BEST SELF
+    </div>
+    <div class="makeupbanner">
+        <div> UNVEIL YOUR BEST SELF </div>
+        <div>Treat yourself to a touch of glamour and let your baeauty shine.</div>
+        <button onclick="sendToWhatsApp('Makeup')">Book Now</button>
+    </div>
+    <!-- sewing page -->
+    <div id="sewing" class="sewing">
+        SEWING & ALTERATIONS
+    </div>
+    <div class="sewingbanner">
+        <div>INSTANT FITTING & SEWING</div>
+        <div>Stop Waiting. Start Wearing</div>
+        <button onclick="sendToWhatsApp('Sewing')">Book Now</button>
+    </div>
+    <!-- Nail page -->
+    <div id="nails" class="Nail">NAIL ARTISTRY & CARE</div>
+    <div class="nailbanner">
+        <div>NAIL ARTISTRY & CARE</div>
+        <div>Unveil your best nail</div>
+        <button onclick="sendToWhatsApp('Nail Extension')">Book Now</button>
+    </div>
+    <!-- Bridal page -->
+    <div id="makeup" class="Bridal">MAKEUP MAGIC FOR EVERY OCCASION</div>
+    <div class="Bridalbanner">
+        <div>MAKEUP MAGIC FOR EVERY</div>
+        <div>OCCASION</div>
+        <div></div>
+        <button onclick="sendToWhatsApp('Bridal Makeup')">Book Now</button>
+    </div>
+    <!-- ABOUT PAGE -->
+    <div id="about us" class="about">
+        GETTING TO KNOW OUR TEAM
+    </div>
+    <div class="aboutbanner">
+
+        <div>
+            Our Story & Vision
+        </div>
+        <div>
+            We bring instant fashion and beauty services to you,fast!
+        </div>
+        <div>
+            <!-- We bring insatant fashion all and beauty services, blarg save fixing, and new beauty mereting. Fixing deauty
+            understorm, pothontion, and meantrang services. Industry bit and fast. Rapid Delivery. Theme gives warm,
+            trustworthy,ample negative sparr , premium feel -->
+            FixMYstyle is your instant styling partner. Whether it is Saree Draping, Instant Fitting or Sewing, Makeup,
+            or Nail Art, we provide professional services at your home. No more wating, No more traviling---Just perfect
+            style, fast.
+        </div>
+
+        <img src="image/sewing-workshop-concept-women-work-atelier-sew-dresses-other-clothes-employees-sew-clothes_118813-24370.avif"
+            alt="">
+    </div>
+    <div class="badges">
+        <div>
+            <img width="150" height="auto" src="image/Adobe Express 2026-04-14 23.11.51.png" alt="">
+            <div>
+                <div class="police">
+                    POLICE BACKGROUND CHECKED
+                </div>
+                <DIV>
+                    100% of our staff have clean records
+                </DIV>
+            </div>
+        </div>
+        <div>
+            <img width="160" height="auto" src="image/Adobe Express 2026-04-14 23.14.37.png" alt="">
+            <div class="women">
+                VERIFIED FEMALE TEAM
+            </div>
+            <DIV>
+                Your safety is our top priority.
+            </DIV>
+            <Div>Exclusively women</Div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="first">
+            <div>FixMYstyle</div>
+            <div>
+                fixMYstyle.com brand beauty service.
+                Background-checked, female experts
+                ensure your safety and comfort
+            </div>
+            <div>Copyright FixMYstyle</div>
+        </div>
+        <div class="second">
+            <div>QUICK LINKS</div>
+            <div>
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Book Now</a>
+                <a href="#">Blog</a>
+            </div>
+        </div>
+        <div class="third">
+            <div>SUPPORT</div>
+            <div>
+                <a href="#">FAQs</a>
+                <a href="#">Contact</a>
+                <a href="#">Safety Policies</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+        <div class="fourth">
+            <div>CONNECT</div>
+            <div>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav">
+    <div>🏠<a href="#home">Home</a></div>
+    <div>🏠<a href="#makeup">Makeup</a></div>
+    <div>🔍<a href="#beauty">Beauty</a></div>
+    <div>✂️<a href="#sewing">Sewing</a></div>
+</div>
+    <script>
+        function sendToWhatsApp(service) {
+
+            var phone = "918433163197";
+
+            var message = "I want to book " + service;
+
+            var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+            window.open(url, "_blank");
+        }
+    </script>
+    <script>
+function searchService() {
+
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    if (input.includes("beauty")) {
+        document.getElementById("beauty").scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (input.includes("sewing")) {
+        document.getElementById("sewing").scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (input.includes("nail")) {
+        document.getElementById("nails").scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (input.includes("about")) {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    } 
+    else {
+        alert("Service not found");
+    }
+}
+</script>
+</body>
+
+</html>
