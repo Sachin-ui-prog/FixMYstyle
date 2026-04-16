@@ -1,0 +1,841 @@
+:root {
+    --bg: #d8ff98c4;
+    --card: #ffffff;
+    --primary: #ff6b9d;
+    --soft: #f6d2b5;
+    --text: #333;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+body {
+    background-color: #d8ff98c4;
+}
+
+nav {
+    height: 60px;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    box-shadow: 18px 6px 6px rgba(0, 0, 0, 0.1);
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav> :nth-child(1) {
+    font-size: 30px;
+    font-weight: 900;
+    color: #F16DA4;
+    background-color: white;
+
+}
+
+nav div span a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    /* background-color: white; */
+
+}
+
+nav div span {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d8ff98c4; */
+    margin-top: 80px;
+    gap: 15px;
+
+}
+
+.main> :nth-child(1) {
+    font-weight: 600;
+    font-size: 25px;
+
+}
+
+.main div input {
+    width: 30vw;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-left: 10px;
+    background-color: white;
+    z-index: 1;
+    border: none;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    font-weight: 600;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: auto;
+    /* grid-template-rows: repeat(3, 160px); */
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 8%;
+    column-gap: 20px;
+    width: 100%;
+
+}
+
+/* .box{
+    width: 200px;
+    height: 180px;
+    background-color: white;
+
+} */
+/* .box1{
+width: 150px;
+height: 100px;
+/* border: 2px solid; */
+/* background-color: white; *
+/* .box2{
+width: 150px;
+height: 100px;
+/* border: 2px solid; */
+/* background-color: white; */
+
+/* .box3{
+width: 150px;
+height: 100px;
+/* border: 2px solid; */
+
+.card div div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card button {
+    width: 100%;
+    padding: 8px;
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beauty {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: rgba(168, 141, 75, 0.914);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.banner {
+    font-size: 14px;
+    text-align: center;
+}
+
+.makeupbanner {
+    position: relative;
+    height: 50vh;
+    width: auto;
+    background-image: url("image/makeup-brushes-and-powder-on-a-pink-background-created-with-generative-ai-technology-free-photo.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+.makeupbanner> :nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.makeupbanner> :nth-child(2) {
+    position: absolute;
+    top: 27%;
+    left: 5.4%;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+}
+
+.makeupbanner button {
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sewing {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: rgba(168, 141, 75, 0.914);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sewingbanner {
+    height: 60vh;
+    background-image: url("image/a-pair-of-scissors-and-pink-thread-on-a-pink-background-created-with-generative-ai-technology-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    margin-top: 30px;
+}
+
+.sewingbanner :nth-child(1) {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: white;
+    text-align: right;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.sewingbanner :nth-child(2) {
+    position: absolute;
+    top: 27%;
+    right: 5.4%;
+    color: white;
+    text-align: centre;
+    font-size: 40px;
+    width: 600px;
+}
+
+.sewingbanner button {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    padding: 10px 30px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.Nail {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: rgba(168, 141, 75, 0.914);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.nailbanner {
+    height: 60vh;
+    background-image: url("image/pngtree-manicured-hand-with-brush-on-black-background-featuring-nail-design-and-extensions-photo-image_36743820.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    margin-top: 30px;
+}
+
+.nailbanner :nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.nailbanner :nth-child(2) {
+    position: absolute;
+    top: 27%;
+    left: 5.4%;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    width: 600px;
+}
+
+.nailbanner button {
+    position: absolute;
+    top: 45%;
+    left: 5.4%;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.Bridal {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: rgba(168, 141, 75, 0.914);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.Bridalbanner {
+    height: 60vh;
+    /* background-image: url("image/beautiful-indian-bridal-makeup-00o424q61jblvfvv.jpg"); */
+    background-image: url("image/wp8918513.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.Bridalbanner :nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    color: white;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 500;
+    width: 800px;
+}
+
+.Bridalbanner :nth-child(2) {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    color: white;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 500;
+    width: 800px;
+}
+
+.Bridalbanner :nth-child(3) {
+    position: absolute;
+    top: 27%;
+    left: 5.4%;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    width: 600px;
+}
+
+.Bridalbanner button {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.about {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: rgba(168, 141, 75, 0.914);
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 3%;
+
+}
+
+.aboutbanner {
+    height: 35vh;
+    width: 100%;
+    max-width: 100%;
+    /* position: absolute; */
+    /* margin-top: 50%; */
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 11px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.aboutbanner :nth-child(1) {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    /* z-index: 1; */
+}
+
+.aboutbanner :nth-child(2) {
+    position: relative;
+    top: 15%;
+    left: 42.7%;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+.aboutbanner :nth-child(3) {
+    position: relative;
+    top: 15%;
+    left: 44%;
+    color: black;
+    text-align: left;
+    width: 500px;
+
+}
+
+.aboutbanner img {
+    position: relative;
+    object-fit: cover;
+    width: 400px;
+    height: auto;
+    bottom: 65%;
+    left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bottom {
+    /* margin-top: 10%; */
+    min-height: 30vh;
+    height: auto;
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;
+}
+
+.bottom div {
+    word-wrap: break-word;
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+@media (max-width:768px) {
+
+    .bottom {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        width: 100%;
+    }
+
+}
+
+.first> :nth-child(1) {
+    font-size: 30px;
+    font-weight: 900;
+    color: #F16DA4;
+    background-color: white;
+    /* margin-left: 10px; */
+}
+
+.first :nth-child(2) {
+    display: flex;
+    width: 300px;
+
+    gap: 20px;
+    background-color: white;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.first :nth-child(3) {
+    margin-top: 5px;
+
+    font-weight: 600;
+}
+
+.second> :nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.second :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.second div a {
+    text-decoration: none;
+    color: black;
+    /* font-size: 15px; */
+}
+
+.third> :nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.third div a {
+    text-decoration: none;
+    color: black;
+}
+
+.third :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fourth> :nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.fourth :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fourth div a {
+    text-decoration: none;
+    color: black;
+}
+
+.badges {
+    position: relative;
+    margin-top: 60px;
+    height: 60vh;
+    background-color: rgb(166, 253, 250);
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.badges :nth-child(1) {
+    width: 250px;
+}
+
+.badges .police {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.women {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.badge {
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    /* align-content: stretch; */
+    flex-wrap: wrap;
+    /* column-gap: 100px; */
+    background-color: rgb(166, 253, 250);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.svg {
+    height: 30px;
+    width: 30px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    body {
+        background-color: var(--bg);
+    }
+
+    body {
+        padding-bottom: 70px;
+        /* for bottom nav */
+    }
+
+    nav {
+        flex-direction: row;
+        height: 50px;
+    }
+
+    nav div {
+        display: none;
+        /* hide menu links on mobile */
+    }
+
+    .main {
+        background: var(--soft);
+        width: 100%;
+        padding: 20px 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .main> :nth-child(1) {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .main div input {
+        width: 90%;
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 40px;
+        border: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CARD FIX */
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .card>div {
+        background: var(--card);
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: 120px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .card p {
+        font-weight: 600;
+        margin: 8px 0 2px;
+    }
+
+    .card button {
+        width: 100%;
+        background: var(--primary);
+        border: none;
+        color: white;
+        padding: 8px;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+    /* BANNERS FIX */
+    .makeupbanner,
+    .sewingbanner,
+    .nailbanner,
+    .Bridalbanner {
+        height: 40vh;
+    }
+
+    .makeupbanner> :nth-child(1),
+    .sewingbanner :nth-child(1),
+    .nailbanner :nth-child(1),
+    .Bridalbanner :nth-child(1) {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .makeupbanner> :nth-child(2),
+    .sewingbanner :nth-child(2),
+    .nailbanner :nth-child(2) {
+        font-size: 14px;
+        width: 30%;
+    }
+
+    .makeupbanner button,
+    .sewingbanner button,
+    .nailbanner button,
+    .Bridalbanner button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    /* HEADINGS */
+    .beauty,
+    .sewing,
+    .Nail,
+    .Bridal,
+    .about {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* ABOUT SECTION FIX */
+    .aboutbanner {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .aboutbanner img {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .aboutbanner :nth-child(2),
+    .aboutbanner :nth-child(3) {
+        position: static;
+        width: 100%;
+        left: 0;
+    }
+
+    /* FOOTER FIX */
+    /* .bottom {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    } */
+
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #cfe8e8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .bottom-nav div {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .bottom-nav p {
+        margin: 0;
+    }
+    .bottom-nav div a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+}
